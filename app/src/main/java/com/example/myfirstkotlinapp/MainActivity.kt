@@ -1,5 +1,6 @@
 package com.example.myfirstkotlinapp
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,9 +18,11 @@ class MainActivity : AppCompatActivity() {
     fun sendMessage(view: View) {
         val editText = findViewById<EditText>(R.id.editText)
         val message = editText.text.toString()
-        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, message)
-        }
+    }
+
+    fun finishMadLib(view: View) {
+        val intent = Intent(this, DisplayMessageActivity::class.java).apply {}
         startActivity(intent)
     }
+
 }

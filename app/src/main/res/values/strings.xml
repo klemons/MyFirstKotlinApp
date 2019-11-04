@@ -2,4 +2,7 @@
     <string name="app_name">MyFirstKotlinApp</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="noun">Enter a noun!</string>
+    <string name="verb">Enter a verb!</string>
+    <string name="adjective">Enter an adjective!</string>
 </resources>
