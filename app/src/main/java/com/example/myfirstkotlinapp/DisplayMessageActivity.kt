@@ -13,13 +13,13 @@ class DisplayMessageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display_message)
 
-        // Get the Intent that started this activity and extract the string
-        val message = intent.getStringExtra(EXTRA_MESSAGE)
+        val textView = findViewById<TextView>(R.id.textView)
 
-        // Capture the layout's TextView and set the string as its text
-        val textView = findViewById<TextView>(R.id.textView).apply {
-            text = message
-        }
+        var wordHolder = arrayListOf<String>()
+        wordHolder = intent.getStringArrayListExtra("wordList")
+
+        for (item in wordHolder)
+            textView.append(item)
 
         //Randomize the "8 Ball message"
         var answer1 = "Yes, of course!"
