@@ -7,6 +7,7 @@ import android.view.View
 import android.content.Intent
 import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.widget.EditText
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,13 +16,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    var madLibList = arrayListOf<String>()
+    var count = 0;
+
     fun sendMessage(view: View) {
         val editText = findViewById<EditText>(R.id.editText)
-        val message = editText.text.toString()
+        madLibList[count] = editText.text.toString()
+        count++
+        if (count == 8) {
+            finishMadLib(madLibList)
+        }
     }
 
-    fun finishMadLib(view: View) {
-        val intent = Intent(this, DisplayMessageActivity::class.java).apply {}
+    fun finishMadLib(mutableList: ArrayList<String>) {
+        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+            putExtra("wordList", mutableList)
+        }
         startActivity(intent)
     }
 
