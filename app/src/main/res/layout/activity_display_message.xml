@@ -12,6 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="There once was an adventuring group known as "
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="55dp" />
 
@@ -19,6 +22,11 @@
         android:id="@+id/input1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/text1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="42dp"
-        android:text=". The group was from "
+        android:text="The group was from "
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
@@ -36,7 +47,11 @@
         android:id="@+id/input2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toEndOf="@+id/text2"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
@@ -46,6 +61,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text=" and their party consisted of very "
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
         app:layout_constraintStart_toEndOf="@+id/input2"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
@@ -53,17 +72,24 @@
         android:id="@+id/input3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        app:layout_constraintStart_toEndOf="@+id/text3"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
 
     <TextView
         android:id="@+id/input4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="42dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@id/input3"
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
     <TextView
@@ -72,6 +98,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text=". Although their "
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/input4"
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
@@ -79,7 +108,11 @@
         android:id="@+id/input5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintStart_toEndOf="@+id/text4"
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
@@ -88,7 +121,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
-        android:text=" were fierce, the "
+        android:text=" were fierce, the"
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
         app:layout_constraintStart_toEndOf="@+id/input5"
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
@@ -96,25 +133,36 @@
         android:id="@+id/input6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        app:layout_constraintStart_toEndOf="@+id/text5"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
 
     <TextView
         android:id="@+id/text6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="42dp"
         android:text=" sun filled them with determination. The "
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/input6"
         app:layout_constraintTop_toBottomOf="@+id/text4" />
 
     <TextView
         android:id="@+id/input7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintStart_toEndOf="@+id/text6"
         app:layout_constraintTop_toBottomOf="@+id/text4" />
 
@@ -125,6 +173,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="42dp"
         android:text=" they received helped pay for their giant "
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text6" />
 
@@ -132,7 +183,11 @@
         android:id="@+id/input8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:fontFamily="@font/chunkfiveprint"
+        android:textSize="24dp"
+        android:textColor="@color/darkorange"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintStart_toEndOf="@id/text7"
         app:layout_constraintTop_toBottomOf="@+id/text6" />
 
@@ -142,6 +197,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text="."
+        android:fontFamily="@font/amaticbold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/input8"
         app:layout_constraintTop_toBottomOf="@+id/text6" />
 
